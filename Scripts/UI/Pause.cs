@@ -4,14 +4,6 @@ using UnityEngine;
 
 public class Pause : MonoBehaviour
 {
-    [SerializeField] private KeyboardInput _input;
-
-    private void Start()
-    {
-      _input = GetComponent<KeyboardInput>();
-
-    }
-
     public void ClosePanel(GameObject panel)
     {
         panel.SetActive(false);

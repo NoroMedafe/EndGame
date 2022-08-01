@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[RequireComponent(typeof(KeyboardInput))]
 public class DoorOpener : MonoBehaviour
 {
     [SerializeField] private float _interactDistance;
     [SerializeField] private Transform _hitPosition;
-    [SerializeField] private KeyboardInput _input;
+
+    private KeyboardInput _input;
 
     private void Start()
     {

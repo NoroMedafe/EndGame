@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(KeyboardInput))]
 public class OpenPanel : MonoBehaviour
 {
-    [SerializeField] private GameObject _UI;
+    [SerializeField] private GameObject _Ui;
     [SerializeField] private KeyboardInput _input;
 
     private void Start()
@@ -14,7 +14,7 @@ public class OpenPanel : MonoBehaviour
 
     public void OpenUI()
     {
-        _UI.SetActive(true);
+        _Ui.SetActive(true);
         Time.timeScale = 0;
     }
 

@@ -12,6 +12,7 @@ public class PhysicsMovement : MonoBehaviour
     [SerializeField] private Transform _camera;
 
     private float _turnSmoothVelocity;
+
     private Vector3 _previousPosition;
 
     public void Move(Vector3 direction)

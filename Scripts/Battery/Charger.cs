@@ -8,14 +8,14 @@ public abstract class Charger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent<Battery>(out Battery battery))
+        if (other.TryGetComponent(out Battery battery))
             StartCoroutine(Charge(_countCharge, battery));
     }
 
     private void OnTriggerExit(Collider other)
     {
 
-        if (other.TryGetComponent<Battery>(out Battery battery))
+        if (other.TryGetComponent(out Battery battery))
             StopCoroutine(Charge(_countCharge, battery));
     }
 
